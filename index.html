@@ -8,46 +8,61 @@
     })(window,document,'script','dataLayer','GTM-PFZ9CZBC');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio GTM de Adis</title>
-
+    <title>Estratega Digital Pro | Laboratorio de Adis</title>
+    
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 50px; background-color: #f0f2f5; color: #333; }
-        .container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: inline-block; max-width: 500px; }
-        h1 { color: #1a73e8; margin-bottom: 10px; }
-        p { margin-bottom: 30px; line-height: 1.5; }
-        button { border: none; padding: 12px 25px; cursor: pointer; border-radius: 8px; font-size: 16px; font-weight: bold; margin: 10px; transition: transform 0.2s, background-color 0.2s; }
-        button:active { transform: scale(0.95); }
-        .btn-descarga { background-color: #34a853; color: white; }
-        .btn-descarga:hover { background-color: #2d9249; }
-        .btn-compra { background-color: #4285f4; color: white; }
-        .btn-compra:hover { background-color: #357ae8; }
-        .link-externo { display: block; margin-top: 20px; color: #5f6368; text-decoration: none; font-size: 14px; }
-        .link-externo:hover { text-decoration: underline; }
+        :root { --primary: #1a73e8; --secondary: #34a853; --dark: #202124; --light: #f8f9fa; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Navegación */
+        nav { background: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; }
+        nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: var(--primary); }
+
+        /* Secciones */
+        section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; text-align: center; }
+        .hero { background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 100px 20px; }
+        
+        /* Botones */
+        .btn { border: none; padding: 15px 30px; cursor: pointer; border-radius: 30px; font-size: 18px; font-weight: bold; transition: 0.3s; margin: 10px; display: inline-block; text-decoration: none; }
+        .btn-main { background: var(--secondary); color: white; }
+        .btn-main:hover { background: #2d9249; transform: translateY(-3px); }
+        .btn-outline { border: 2px solid white; color: white; background: transparent; }
+        .btn-outline:hover { background: white; color: var(--primary); }
+
+        /* Contenedor Formulario */
+        #form-container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: 30px; min-height: 400px; }
+        
+        footer { background: var(--dark); color: white; padding: 40px 20px; margin-top: 50px; }
+        .social-links a { color: white; margin: 0 15px; font-size: 24px; text-decoration: none; }
     </style>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFZ9CZBC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <div class="container">
-        <h1>🚀 Mi Laboratorio GTM</h1>
-        <p>Este es tu sitio de pruebas personal. Usa el modo <b>Vista Previa</b> de GTM para ver cómo se activan tus etiquetas.</p>
-        
-        <button id="btn-descarga" class="btn-descarga">Descargar Reporte</button>
-        <button id="btn-compra" class="btn-compra">Finalizar Compra</button>
-        
-        <a href="https://www.google.com" class="link-externo" target="_blank">Probar clic en enlace externo</a>
-    </div>
 
-    <script>
-        // Mensajes visuales para confirmar que hiciste clic
-        document.getElementById('btn-descarga').onclick = function() {
-            console.log('Evento: Intento de descarga');
-            alert('¡Simulando descarga de archivo!');
-        };
-        document.getElementById('btn-compra').onclick = function() {
-            console.log('Evento: Transacción simulada');
-            alert('¡Simulando una compra exitosa!');
-        };
-    </script>
-</body>
-</html>
+    <nav>
+        <div style="font-weight: bold; font-size: 1.2rem;">ADIS PIXEL LAB</div>
+        <div>
+            <a href="#servicios" id="nav-servicios">Servicios</a>
+            <a href="#proyectos" id="nav-proyectos">Proyectos</a>
+            <a href="#contacto" id="nav-contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Impulsa tu Estrategia Digital</h1>
+        <p>Aprende a medir lo que realmente importa con GTM y HubSpot.</p>
+        <a href="#contacto" class="btn btn-main" id="hero-cta-main">Empezar Ahora</a>
+        <a href="https://www.google.com" target="_blank" class="btn btn-outline" id="hero-cta-info">Más Información</a>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+            <div style="background: white; padding: 20px; border-radius: 10px; width: 250px;">
+                <h3>Data Analytics</h3>
+                <p>Configuración avanzada de GA4 y GTM para ecommerce.</p>
+                <button class="btn-service" id="btn-service-data" style="padding: 10px; cursor: pointer;">Saber más</button>
+            </div>
+            <div style="background: white; padding: 20px; border-radius: 10px; width: 250px;">
