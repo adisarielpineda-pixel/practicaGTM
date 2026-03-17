@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PFZ9CZBC');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio GTM de Adis</title>
+
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 50px; background-color: #f0f2f5; color: #333; }
+        .container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: inline-block; max-width: 500px; }
+        h1 { color: #1a73e8; margin-bottom: 10px; }
+        p { margin-bottom: 30px; line-height: 1.5; }
+        button { border: none; padding: 12px 25px; cursor: pointer; border-radius: 8px; font-size: 16px; font-weight: bold; margin: 10px; transition: transform 0.2s, background-color 0.2s; }
+        button:active { transform: scale(0.95); }
+        .btn-descarga { background-color: #34a853; color: white; }
+        .btn-descarga:hover { background-color: #2d9249; }
+        .btn-compra { background-color: #4285f4; color: white; }
+        .btn-compra:hover { background-color: #357ae8; }
+        .link-externo { display: block; margin-top: 20px; color: #5f6368; text-decoration: none; font-size: 14px; }
+        .link-externo:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFZ9CZBC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="container">
+        <h1>🚀 Mi Laboratorio GTM</h1>
+        <p>Este es tu sitio de pruebas personal. Usa el modo <b>Vista Previa</b> de GTM para ver cómo se activan tus etiquetas.</p>
+        
+        <button id="btn-descarga" class="btn-descarga">Descargar Reporte</button>
+        <button id="btn-compra" class="btn-compra">Finalizar Compra</button>
+        
+        <a href="https://www.google.com" class="link-externo" target="_blank">Probar clic en enlace externo</a>
+    </div>
+
+    <script>
+        // Mensajes visuales para confirmar que hiciste clic
+        document.getElementById('btn-descarga').onclick = function() {
+            console.log('Evento: Intento de descarga');
+            alert('¡Simulando descarga de archivo!');
+        };
+        document.getElementById('btn-compra').onclick = function() {
+            console.log('Evento: Transacción simulada');
+            alert('¡Simulando una compra exitosa!');
+        };
+    </script>
+</body>
+</html>
